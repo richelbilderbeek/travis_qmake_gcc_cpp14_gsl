@@ -16,6 +16,7 @@ The goal of this project is to have a clean Travis CI build, with specs:
 
 More complex builds:
  * Use C++17: [travis_qmake_gcc_cpp17_gsl](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp17_gsl)
+ * Add debug and release mode: [travis_qmake_gcc_cpp14_debug_and_release_gsl](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_debug_and_release_gsl)
 
 Less complex builds:
  * Use C++98: [travis_qmake_gcc_cpp98_gsl](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp98_gsl)
