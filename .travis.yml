@@ -11,7 +11,7 @@ install:
   # C++14
   - sudo apt-get install -qq g++-5
   # GSL
-  - git clone https://github.com/Microsoft/GSL
+  - git clone https://github.com/Microsoft/GSL ../
 
 script: 
   - qmake
