@@ -10,10 +10,15 @@ before_install:
 install: 
   # C++14
   - sudo apt-get install -qq g++-5
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
   # GSL
-  - git clone https://github.com/Microsoft/GSL ../
+  - git clone https://github.com/Microsoft/GSL ../GSL
 
 script: 
   - qmake
-  - make
+  - make debug
+  - ./travis_qmake_gcc_cpp14_gsl
+  - make clean
+  - qmake
+  - make release
   - ./travis_qmake_gcc_cpp14_gsl
